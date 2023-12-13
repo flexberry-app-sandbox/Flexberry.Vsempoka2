@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vsempoka2-товары-e",
+  "editForm": "i-i-s-vsempoka2-товары-e",
+  "external": false,
+  "caption": "Товары",
+  "name": "IISVsempoka2ТоварыL",
+  "className": "ТоварыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vsempoka2-товары",
+      "modelProjection": "ТоварыL"
+    }
+  ]
+}

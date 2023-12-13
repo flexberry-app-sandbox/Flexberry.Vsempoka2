@@ -1,0 +1,274 @@
+﻿{
+  "name": "IISVsempoka2ФормирРаспред",
+  "modelName": "i-i-s-vsempoka2-формир-распред",
+  "className": "ФормирРаспред",
+  "nameSpace": "IIS.Vsempoka2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерРаспред",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "докумПоставки",
+      "relatedTo": "i-i-s-vsempoka2-докум-поставки",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "пунктПогруз",
+      "relatedTo": "i-i-s-vsempoka2-пункт-погруз",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "списокБарж",
+      "relatedTo": "i-i-s-vsempoka2-список-барж",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "списокКонтей",
+      "relatedTo": "i-i-s-vsempoka2-список-контей",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ФормирРаспредE",
+      "modelName": "i-i-s-vsempoka2-формир-распред",
+      "attrs": [
+        {
+          "name": "номерРаспред",
+          "caption": "Номер распред",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Производитель",
+          "lookupValueField": "производитель",
+          "relationName": "СписокБарж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "производитель",
+              "caption": "Производитель",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Список барж",
+          "name": "списокБарж",
+          "relatedTo": "i-i-s-vsempoka2-список-барж",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Дата",
+          "lookupValueField": "дата",
+          "relationName": "ДокумПоставки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Докум поставки",
+          "name": "докумПоставки",
+          "relatedTo": "i-i-s-vsempoka2-докум-поставки",
+          "inverse": null
+        },
+        {
+          "lookupValue": "НаимКонтей",
+          "lookupValueField": "наимКонтей",
+          "relationName": "СписокКонтей",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимКонтей",
+              "caption": "Наим контей",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Список контей",
+          "name": "списокКонтей",
+          "relatedTo": "i-i-s-vsempoka2-список-контей",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наим",
+          "lookupValueField": "наим",
+          "relationName": "ПунктПогруз",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наим",
+              "caption": "Наим",
+              "hidden": true,
+              "index": 9
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Пункт погруз",
+          "name": "пунктПогруз",
+          "relatedTo": "i-i-s-vsempoka2-пункт-погруз",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ФормирРаспредL",
+      "modelName": "i-i-s-vsempoka2-формир-распред",
+      "attrs": [
+        {
+          "name": "номерРаспред",
+          "caption": "Номер распред",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СписокБарж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "производитель",
+              "caption": "Производитель",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Производитель",
+          "name": "списокБарж",
+          "relatedTo": "i-i-s-vsempoka2-список-барж",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДокумПоставки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "дата",
+              "caption": "Дата",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Дата",
+          "name": "докумПоставки",
+          "relatedTo": "i-i-s-vsempoka2-докум-поставки",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СписокКонтей",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимКонтей",
+              "caption": "Наим контей",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наим контей",
+          "name": "списокКонтей",
+          "relatedTo": "i-i-s-vsempoka2-список-контей",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПунктПогруз",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наим",
+              "caption": "Наим",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наим",
+          "name": "пунктПогруз",
+          "relatedTo": "i-i-s-vsempoka2-пункт-погруз",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

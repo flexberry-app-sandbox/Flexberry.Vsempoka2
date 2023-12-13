@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vsempoka2-клиенты-e",
+  "editForm": "i-i-s-vsempoka2-клиенты-e",
+  "external": false,
+  "caption": "Клиенты",
+  "name": "IISVsempoka2КлиентыL",
+  "className": "КлиентыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vsempoka2-клиенты",
+      "modelProjection": "КлиентыL"
+    }
+  ]
+}

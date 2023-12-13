@@ -1,0 +1,190 @@
+﻿{
+  "name": "IISVsempoka2ДокумПоставки",
+  "modelName": "i-i-s-vsempoka2-докум-поставки",
+  "className": "ДокумПоставки",
+  "nameSpace": "IIS.Vsempoka2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерДог",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиенты",
+      "relatedTo": "i-i-s-vsempoka2-клиенты",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "организация",
+      "relatedTo": "i-i-s-vsempoka2-организация",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "тЧИнфОЗаказе",
+      "relatedTo": "i-i-s-vsempoka2-т-ч-инф-о-заказе",
+      "inverse": "докумПоставки"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ДокумПоставкиE",
+      "modelName": "i-i-s-vsempoka2-докум-поставки",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДог",
+          "caption": "Номер дог",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НаимЗаказа",
+          "lookupValueField": "наимЗаказа",
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимЗаказа",
+              "caption": "Наим заказа",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Клиенты",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-vsempoka2-клиенты",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 5
+            }
+          ],
+          "index": 4,
+          "type": "standard",
+          "caption": "Организация",
+          "name": "организация",
+          "relatedTo": "i-i-s-vsempoka2-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ТЧИнфОЗаказеE",
+          "caption": "Т ч инф о заказе",
+          "name": "тЧИнфОЗаказе",
+          "relatedTo": "i-i-s-vsempoka2-т-ч-инф-о-заказе",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ДокумПоставкиL",
+      "modelName": "i-i-s-vsempoka2-докум-поставки",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДог",
+          "caption": "Номер дог",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиенты",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимЗаказа",
+              "caption": "Наим заказа",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наим заказа",
+          "name": "клиенты",
+          "relatedTo": "i-i-s-vsempoka2-клиенты",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Организация",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "организация",
+          "relatedTo": "i-i-s-vsempoka2-организация",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

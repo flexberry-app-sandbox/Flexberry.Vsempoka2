@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vsempoka2-организация-e",
+  "editForm": "i-i-s-vsempoka2-организация-e",
+  "external": false,
+  "caption": "Организация",
+  "name": "IISVsempoka2ОрганизацияL",
+  "className": "ОрганизацияL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vsempoka2-организация",
+      "modelProjection": "ОрганизацияL"
+    }
+  ]
+}

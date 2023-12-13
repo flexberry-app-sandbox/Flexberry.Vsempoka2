@@ -1,0 +1,77 @@
+﻿{
+  "name": "IISVsempoka2ТЧИнфОЗаказе",
+  "modelName": "i-i-s-vsempoka2-т-ч-инф-о-заказе",
+  "className": "ТЧИнфОЗаказе",
+  "nameSpace": "IIS.Vsempoka2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товары",
+      "relatedTo": "i-i-s-vsempoka2-товары",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "докумПоставки",
+      "relatedTo": "i-i-s-vsempoka2-докум-поставки",
+      "inverse": "тЧИнфОЗаказе"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТЧИнфОЗаказеE",
+      "modelName": "i-i-s-vsempoka2-т-ч-инф-о-заказе",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НаимТовара",
+          "lookupValueField": "наимТовара",
+          "relationName": "Товары",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наимТовара",
+              "caption": "Наим товара",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Товары",
+          "name": "товары",
+          "relatedTo": "i-i-s-vsempoka2-товары",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

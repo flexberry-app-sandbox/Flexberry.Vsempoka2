@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vsempoka2-формир-распред-e",
+  "editForm": "i-i-s-vsempoka2-формир-распред-e",
+  "external": false,
+  "caption": "Формир распред",
+  "name": "IISVsempoka2ФормирРаспредL",
+  "className": "ФормирРаспредL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vsempoka2-формир-распред",
+      "modelProjection": "ФормирРаспредL"
+    }
+  ]
+}

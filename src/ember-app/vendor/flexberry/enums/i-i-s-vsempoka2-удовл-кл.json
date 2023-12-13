@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Vsempoka2",
+  "className": "УдовлКл",
+  "enumObjects": {
+    "Удовл": "Удовл",
+    "НеУдовл": "НеУдовл"
+  }
+}

@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ФормирРаспред",
+      "projection": "ФормирРаспредL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Форм рез пост",
+  "name": "IISVsempoka2ФормРезПостE",
+  "className": "ФормРезПостE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vsempoka2-форм-рез-пост",
+      "modelProjection": "ФормРезПостE"
+    }
+  ]
+}

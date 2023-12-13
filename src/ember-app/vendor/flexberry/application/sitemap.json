@@ -1,0 +1,85 @@
+﻿{
+  "applicationCaption": "Vsempoka2",
+  "applicationTitle": "Vsempoka2",
+  "items": [
+    {
+      "link": null,
+      "menuName": "vsempoka2",
+      "caption": "Vsempoka2",
+      "title": "Vsempoka2",
+      "children": [
+        {
+          "link": "i-i-s-vsempoka2-форм-рез-пост-l",
+          "menuName": null,
+          "caption": "Форм рез пост",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vsempoka2-пункт-погруз-l",
+          "menuName": null,
+          "caption": "Пункт погруз",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vsempoka2-товары-l",
+          "menuName": null,
+          "caption": "Товары",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vsempoka2-список-барж-l",
+          "menuName": null,
+          "caption": "Список барж",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vsempoka2-список-контей-l",
+          "menuName": null,
+          "caption": "Список контей",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vsempoka2-клиенты-l",
+          "menuName": null,
+          "caption": "Клиенты",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vsempoka2-докум-поставки-l",
+          "menuName": null,
+          "caption": "Докум поставки",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vsempoka2-формир-распред-l",
+          "menuName": null,
+          "caption": "Формир распред",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vsempoka2-пункт-погрузки-l",
+          "menuName": null,
+          "caption": "Пункт погрузки",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-vsempoka2-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

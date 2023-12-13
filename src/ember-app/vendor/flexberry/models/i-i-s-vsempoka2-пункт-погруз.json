@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISVsempoka2ПунктПогруз",
+  "modelName": "i-i-s-vsempoka2-пункт-погруз",
+  "className": "ПунктПогруз",
+  "nameSpace": "IIS.Vsempoka2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "адрес",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наим",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПунктПогрузE",
+      "modelName": "i-i-s-vsempoka2-пункт-погруз",
+      "attrs": [
+        {
+          "name": "наим",
+          "caption": "Наим",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ПунктПогрузL",
+      "modelName": "i-i-s-vsempoka2-пункт-погруз",
+      "attrs": [
+        {
+          "name": "наим",
+          "caption": "Наим",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "адрес",
+          "caption": "Адрес",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

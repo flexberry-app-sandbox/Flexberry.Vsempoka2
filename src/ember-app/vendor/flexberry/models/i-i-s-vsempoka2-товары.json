@@ -1,0 +1,138 @@
+﻿{
+  "name": "IISVsempoka2Товары",
+  "modelName": "i-i-s-vsempoka2-товары",
+  "className": "Товары",
+  "nameSpace": "IIS.Vsempoka2",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "едИзм",
+      "type": "i-i-s-vsempoka2-ед-изм",
+      "flexberryType": "ЕдИзм",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "масса",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наимТовара",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "произв",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "цена",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ТоварыE",
+      "modelName": "i-i-s-vsempoka2-товары",
+      "attrs": [
+        {
+          "name": "наимТовара",
+          "caption": "Наим товара",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "произв",
+          "caption": "Произв",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "едИзм",
+          "caption": "Ед изм",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "масса",
+          "caption": "Масса",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ТоварыL",
+      "modelName": "i-i-s-vsempoka2-товары",
+      "attrs": [
+        {
+          "name": "наимТовара",
+          "caption": "Наим товара",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "произв",
+          "caption": "Произв",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "едИзм",
+          "caption": "Ед изм",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "цена",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "масса",
+          "caption": "Масса",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

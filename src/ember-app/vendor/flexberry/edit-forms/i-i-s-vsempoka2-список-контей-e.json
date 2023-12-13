@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Список контей",
+  "name": "IISVsempoka2СписокКонтейE",
+  "className": "СписокКонтейE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vsempoka2-список-контей",
+      "modelProjection": "СписокКонтейE"
+    }
+  ]
+}

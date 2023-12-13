@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vsempoka2-список-контей-e",
+  "editForm": "i-i-s-vsempoka2-список-контей-e",
+  "external": false,
+  "caption": "Список контей",
+  "name": "IISVsempoka2СписокКонтейL",
+  "className": "СписокКонтейL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vsempoka2-список-контей",
+      "modelProjection": "СписокКонтейL"
+    }
+  ]
+}

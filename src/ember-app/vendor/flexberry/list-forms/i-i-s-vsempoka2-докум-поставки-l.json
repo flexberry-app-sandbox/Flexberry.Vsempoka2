@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-vsempoka2-докум-поставки-e",
+  "editForm": "i-i-s-vsempoka2-докум-поставки-e",
+  "external": false,
+  "caption": "Докум поставки",
+  "name": "IISVsempoka2ДокумПоставкиL",
+  "className": "ДокумПоставкиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-vsempoka2-докум-поставки",
+      "modelProjection": "ДокумПоставкиL"
+    }
+  ]
+}
